@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Education details</title>
+        <style>
+            td{
+                color: #fff;
+            }
+            h2{
+                color:#fff;
+            }
+            .home-img{
+    width: 410px;
+    height: 410px;
+}
+
+.home-img .glowing-circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img .glowing-circle::after{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: #0c1022;
+    border-radius: 50%;
+}
+.glowing-circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f06,#3cf);
+    border-radius: 50%;
+    animation: circleRotate 5s linear infinite;
+}
+.glowing-circle span:nth-child(1) {
+    filter: blur(10px);
+}
+.glowing-circle .image {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.image img{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 350px;
+    object-fit: cover;
+}
+
+@keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes circleRotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+        </style>
+      
+    </head>
+    <body bgcolor="#0c1022">
+        <h2 align="center">Education...</h2>
+       <table border="0" align="center" width="1000" height="500">
+        <tr>
+            <td><strong>Bachelor of Technology in [Artificial Intelligence and Data Science] (Ongoing)</strong></td>
+            <td rowspan="12"><div class="home-img">
+                <div class="glowing-circle">
+                    <span></span>
+                    <span></span>
+                    <div class="image">
+                        <img src="download.png" alt="" >
+                    </div>
+                </div></td>
+        </tr>
+        <tr>
+            <td><strong>Vishnu Institute of Technology, Bhimavaram, India</strong></td>
+        </tr>
+        <tr>
+            <td><strong>Expected Graduation: [May 2027]</strong></td>
+        </tr>
+        <tr>
+           <td><strong>Diploma in [Computer Science]</strong></td>
+        </tr>
+        <tr>
+            <td><strong>Gudlavalleru Polytechnic College, Gudlavalleru, India<strong></td>
+        </tr>
+        <tr>
+            <td><strong>Graduated: [May 2024]</strong></td>
+            
+        </tr>
+        <tr>
+            <td><strong>High School Education (10th Grade)</strong></td>
+        </tr>
+            <tr><td><strong>Dharmajigudem, India</strong></td></tr>
+            <tr><td><strong>Graduated: [2021]</strong></td></tr>
+            <tr><td><strong>Primary Education (1st – 5th Grade)</strong></td></tr>
+            <tr><td><strong>[School Name or "Local School Near Residence"], [Guravaigudem]</strong></td></tr>
+        <tr>
+            <td><strong> Completed: [2015]</strong></td>
+        </tr>
+       </table>
+    </div>
+    </body>
+</html>
